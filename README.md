@@ -2,6 +2,13 @@
 
 A Python-based automation system for processing DIC2 Toastmasters Club membership forms.
 
+# repo
+https://github.com/pleabargain/toastmasters-form-filler-using-cline-and-python-to-gnerate-a-doc-file
+
+I see a time very soon when I will be able to use this kind of automation to fill out forms on any website.
+
+
+
 ## Project Overview
 
 This system automates the process of filling out Toastmasters membership forms by:
