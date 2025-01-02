@@ -1,0 +1,156 @@
+{
+  "personalInformation": {
+    "firstName": {
+      "type": "text",
+      "required": true,
+      "label": "First name"
+    },
+    "lastName": {
+      "type": "text",
+      "required": true,
+      "label": "Last name"
+    },
+    "email": {
+      "type": "text",
+      "required": true,
+      "label": "Email"
+    },
+    "phone": {
+      "type": "text",
+      "required": true,
+      "label": "Phone # (Whatsapp)"
+    },
+    "birthday": {
+      "type": "date",
+      "required": true,
+      "label": "Birthday (dd/mm)",
+      "format": "dd/mm"
+    },
+    "linkedIn": {
+      "type": "text",
+      "required": false,
+      "label": "LinkedIn name"
+    },
+    "instagram": {
+      "type": "text",
+      "required": false,
+      "label": "Instagram handle"
+    },
+    "mailingAddress": {
+      "type": "multiline",
+      "required": true,
+      "label": "Mailing Address"
+    }
+  },
+  "membershipHistory": {
+    "previousMember": {
+      "type": "checkbox",
+      "required": true,
+      "label": "Have you ever been a member of Toastmasters?",
+      "options": ["No", "Yes"],
+      "conditionalFields": {
+        "memberNumber": {
+          "type": "text",
+          "required": false,
+          "label": "Member number, if known",
+          "showWhen": "Yes"
+        }
+      }
+    }
+  },
+  "discoveryAndAttendance": {
+    "discoverySource": {
+      "type": "checkbox",
+      "required": true,
+      "label": "How did you hear about DIC2 Toastmasters Club?",
+      "options": ["Meet up", "Instagram", "Toastmasters website", "Word of mouth", "Other"],
+      "conditionalFields": {
+        "wordOfMouthSpecify": {
+          "type": "text",
+          "required": false,
+          "label": "Please specify",
+          "showWhen": "Word of mouth"
+        },
+        "otherSpecify": {
+          "type": "text",
+          "required": false,
+          "label": "Please specify",
+          "showWhen": "Other"
+        }
+      }
+    },
+    "guestAttendance": {
+      "type": "checkbox",
+      "required": true,
+      "label": "How many times have you been a guest at DIC2?",
+      "options": ["0 -- 1", "2 -- 4", "5 +"]
+    },
+    "visitedOtherClubs": {
+      "type": "checkbox",
+      "required": true,
+      "label": "Have you visited other clubs before joining DIC2?",
+      "options": ["No", "Yes"],
+      "conditionalFields": {
+        "clubNames": {
+          "type": "text",
+          "required": false,
+          "label": "Club names",
+          "showWhen": "Yes"
+        }
+      }
+    }
+  },
+  "goalsAndMotivation": {
+    "reasons": {
+      "type": "checkbox",
+      "required": true,
+      "label": "I've joined Toastmasters to:",
+      "options": [
+        "To improve communication skills",
+        "To improve leadership skills",
+        "For general personal growth and improving self-confidence",
+        "Networking and relationship-building",
+        "To prepare for a particular event or project",
+        "I needed a new challenge",
+        "Other"
+      ],
+      "conditionalFields": {
+        "otherSpecify": {
+          "type": "text",
+          "required": false,
+          "label": "Please specify",
+          "showWhen": "Other"
+        }
+      }
+    },
+    "specificGoal": {
+      "type": "checkbox",
+      "required": true,
+      "label": "Do you have a specific goal you would like to achieve during your Toastmasters journey?",
+      "options": ["No", "Yes"],
+      "conditionalFields": {
+        "goalSpecify": {
+          "type": "text",
+          "required": false,
+          "label": "Please specify",
+          "showWhen": "Yes"
+        }
+      }
+    }
+  },
+  "memberPromises": {
+    "date": {
+      "type": "date",
+      "required": true,
+      "label": "Date",
+      "format": "dd/mm/yyyy"
+    }
+  },
+  "payment": {
+    "totalDue": {
+      "type": "text",
+      "required": true,
+      "label": "Total due"
+    }
+  }
+}
